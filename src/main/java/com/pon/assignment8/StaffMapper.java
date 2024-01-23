@@ -10,6 +10,9 @@ public interface StaffMapper {
         @Select("SELECT * FROM staff")
         List<Staff> findAll();
 
+        @Select("SELECT * FROM staff WHERE smoking = #{smoking}")
+        List<Staff> isSmoking(boolean smoking);
+
         @Select("SELECT * FROM companies")
         List <Company> findAll2();
     }

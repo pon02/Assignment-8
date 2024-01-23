@@ -17,6 +17,10 @@ public class StaffController {
         public List<Staff> findAll() {
             return staffMapper.findAll();
         }
+        @GetMapping("/staff/room_type")
+        public List<Staff> isSmoking(@RequestParam String smoking) {
+            return staffMapper.isSmoking(Boolean.parseBoolean(smoking));
+        }
         @GetMapping("/companies")
         public List<Company> findAll2() {
             return staffMapper.findAll2();
