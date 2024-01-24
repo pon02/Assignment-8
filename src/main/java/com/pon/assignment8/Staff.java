@@ -4,14 +4,14 @@ public class Staff {
     private int id;
     private String name;
     private int age;
-    private String company;
+    private String company_id;
     private boolean smoking;
 
-    public Staff(int id, String name, int age, String company, boolean smoking) {
+    public Staff(int id, String name, int age, String company_id, boolean smoking) {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.company = company;
+        this.company_id = company_id;
         this.smoking = smoking;
     }
 
@@ -27,8 +27,8 @@ public class Staff {
         return age;
     }
 
-    public String getCompany() {
-        return company;
+    public String getCompany_id() {
+        return company_id;
     }
 
     public boolean isSmoking() {
