@@ -14,8 +14,8 @@ public class StaffController {
             this.staffMapper = staffMapper;
         }
         @GetMapping("/staff")
-        public List<Staff> findAll() {
-            return staffMapper.findAll();
+        public List<Staff> findAllStaff() {
+            return staffMapper.findAllStaff();
         }
         @GetMapping("/staff/room_type")
         public List<Staff> isSmoking(@RequestParam String smoking) {
@@ -23,6 +23,6 @@ public class StaffController {
         }
         @GetMapping("/companies")
         public List<Company> findAllCompany() {
-            return staffMapper.findAll2();
+            return staffMapper.findAllCompany();
     }
 }
