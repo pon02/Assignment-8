@@ -22,7 +22,7 @@ public class StaffController {
             return staffMapper.isSmoking(Boolean.parseBoolean(smoking));
         }
         @GetMapping("/companies")
-        public List<Company> findAll2() {
+        public List<Company> findAllCompany() {
             return staffMapper.findAll2();
     }
 }
