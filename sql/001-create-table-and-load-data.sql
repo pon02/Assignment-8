@@ -4,7 +4,7 @@ CREATE TABLE staff (
   id int unsigned AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
   age int unsigned NOT NULL,
-  company_id VARCHAR(100) NOT NULL,
+  company_id int NOT NULL,
   smoking BOOLEAN NOT NULL,
   PRIMARY KEY(id)
 );
